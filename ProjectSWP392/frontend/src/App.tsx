@@ -17,6 +17,12 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 
 import EmployeeLayout from "./layouts/EmployeeLayout";
 import EmployeePage from "./pages/employee/EmployeePage";
+import EmployeeSchedulePage from "./pages/employee/EmployeeSchedulePage";
+import EmployeeCoursesPage from "./pages/employee/EmployeeCoursesPage";
+import EmployeeCourseDetailPage from "./pages/employee/EmployeeCourseDetailPage";
+import EmployeeResultsPage from "./pages/employee/EmployeeResultsPage";
+import EmployeeFeedbackPage from "./pages/employee/EmployeeFeedbackPage";
+import EmployeeNotificationsPage from "./pages/employee/EmployeeNotificationsPage";
 import { useAuthStore } from "./stores/auth.store";
 
 function App() {
@@ -86,6 +92,12 @@ function App() {
   }
 >
   <Route index element={<EmployeePage />} />
+  <Route path="schedule" element={<EmployeeSchedulePage />} />
+  <Route path="courses" element={<EmployeeCoursesPage />} />
+  <Route path="course-detail" element={<EmployeeCourseDetailPage />} />
+  <Route path="results" element={<EmployeeResultsPage />} />
+  <Route path="feedback" element={<EmployeeFeedbackPage />} />
+  <Route path="notifications" element={<EmployeeNotificationsPage />} />
 </Route>
 
       </Routes>
